@@ -1,3 +1,3 @@
 {% for el in data %}
-<a href="{% url 'mysite:product_id/' %}"{{el}}>{{el}}</a><br>
+<a href="{% url 'mysite:productlist' el %}">{{el}}</a><br>
 {% endfor %}

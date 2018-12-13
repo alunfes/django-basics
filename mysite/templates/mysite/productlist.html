@@ -1,1 +1,3 @@
-<h2>product id = {{id}}</h2>
+{% for id in plist %}
+<a href="{% url 'mysite:productdetail' id %}">product id = {{id}}</a><br>
+{% endfor %}
